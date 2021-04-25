@@ -116,6 +116,26 @@ git commit -m "提交注释"
 git push git@github.com:wnyrng/notebook.git  master
 ```
 
+官方推荐的方法
+
+```shell
+# 初次生成仓库上传
+git init
+git add []
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:wnyrng/notebook.git #添加远程仓库
+git push -u origin main
+```
+
+```shell
+git remote add origin git@github.com:wnyrng/notebook.git
+git branch -M main
+git push -u origin main
+```
+
+
+
 # 5.注意事项
 
 ## 5.1 笔记文件名不要包含空格，如果有空格那么上传到github中预览的时候将无法看到图片
@@ -124,3 +144,11 @@ git push git@github.com:wnyrng/notebook.git  master
 # 6.额外说明-把图片和笔记分开存放
 
 上面的笔记搭建是图片和笔记都存放在本地，然后一起推送到远程仓库，但这样做有个问题，当我们写了比较多的笔记，这时候图片就会占据大量的空间，github一个仓库1G（超过1G会收到邮件）
+
+## 6.1 准备软件
+
+**PicGo软件，一款把图片上传到图床的软件，typora现在的版本可以和这个该软件配合轻松自动上传**
+
+如图所示，现在版本可以选择上传服务
+
+![image-20210425152919147](../assets/Typora+github-云笔记/image-20210425152627601.png)
